@@ -23,7 +23,7 @@ const Home = () => {
         section: data.section
       };
       setIsLoading(true);
-      await fetch('https://info-create.netlify.app/data/create',{
+      await fetch('http://localhost:5000/data/create',{
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

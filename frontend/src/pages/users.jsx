@@ -8,7 +8,7 @@ const Users = () => {
     useEffect(() => {
         async function fetchData() {
             try {
-                const response = await fetch('https://info-create.netlify.app/data/collect', {
+                const response = await fetch('http://localhost:5000/data/collect', {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json'
